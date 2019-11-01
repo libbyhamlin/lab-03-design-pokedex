@@ -15,13 +15,33 @@ header {
   background-image: url(./assets/Pokedex.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height:154px;
+  height: 15vmax;
+}
+
+@media (min-width: 900px) {
+  header {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) {
+  header {
+    width: 100%;
+  }
 }
 
 nav {
-  font-family: 'pokemon_gbregular';
+  font-family: "pokemon_gbregular";
   font-weight: normal;
   font-style: normal;
+}
+
+@media (min-width: 320px) {
+  nav {
+    display: flex;
+    display: float;
+    float: right; 
+  }
 }
 
 header nav {
@@ -35,30 +55,30 @@ header nav {
 header nav a {
   display: block;
   width: 100%;
-  background: white;
+  /* background: white; */
   padding: 10px;
   margin: 5px 0;
   text-align: center;
 }
 
-@media (min-width:900px) {
+@media (min-width: 900px) {
   header {
-      display: grid;
-      grid-template-areas: 'header navigation';
+    display: grid;
+    grid-template-areas: "header navigation";
   }
 
   header nav {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   header nav a {
-      margin: 0 5px;
-      width: initial;
+    margin: 0 5px;
+    width: initial;
   }
-} 
+}
 
 header section {
   display: flex;
@@ -67,9 +87,35 @@ header section {
   grid-area: header;
 }
 
-.option-section {
+@media (min-width: 320) {
+  main {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+ul.grid-images {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  
+}
+
+@media (min-width: 320px) {
+  ul.grid-images {
+    display: grid;
+    width: 5vw;
+  }
+}
+
+li.item-square {
+  text-align: center;
+  list-style-type: none;
+}
+
+img {
+  height: 31vh;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h2 span {
+  font-size: 0.8em;
 }
