@@ -5,3 +5,5 @@ export async function getMovies() {
     const response = await fetch(URL);
     return await response.json();
 }
+
+
